@@ -11,6 +11,7 @@ client.on("ready", async () => {    //Metiuw
 const izinliReklam = ["youtube", "youtu.be"];
 let reklamlar = ["discord.app", "discord.gg", "discord.gg/", "discordapp", "discordgg", ".com", ".net", ".xyz", ".tk", ".pw", ".io", ".me", ".gg", "www.", "https", "http", ".gl", ".org", ".com.tr", ".biz", ".party", ".rf.gd", ".az", ".cf", ".me", ".in"]
 
+// Mesaj gönderme
 
 client.on('message', async message => {
 
@@ -22,13 +23,14 @@ client.on('message', async message => {
 
             if (message.member.hasPermission("ADMINISTRATOR")) return;  // Reklam yapan kişide yönetici yetkisi varsa return eder
             message.delete()
-            message.member.roles.add(`${config.mutedrole}`);
+            message.member.roles.add(`${config.mutedrole}`); // config.json dosyasındaki mutedrole 
         }
     }
 
 });
 
 
+// Mesaj güncelleme
 
 client.on("messageUpdate", async (oldMsg, newMsg) => {
 
@@ -40,7 +42,7 @@ client.on("messageUpdate", async (oldMsg, newMsg) => {
 
             if (newMsg.member.hasPermission("ADMINISTRATOR")) return; // Reklam yapan kişide yönetici yetkisi varsa return eder
             newMsg.delete()
-            message.member.roles.add(`${config.mutedrole}`);
+            message.member.roles.add(`${config.mutedrole}`); config.json dosyasındaki mutedrole 
         }
     }
 
