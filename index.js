@@ -9,6 +9,8 @@ client.on("ready", async () => {    //Metiuw
 });
 
 const izinliReklam = ["youtube", "youtu.be"];
+
+
 let reklamlar = ["discord.app", "discord.gg", "discord.gg/", "discordapp", "discordgg", ".com", ".net", ".xyz", ".tk", ".pw", ".io", ".me", ".gg", "www.", "https", "http", ".gl", ".org", ".com.tr", ".biz", ".party", ".rf.gd", ".az", ".cf", ".me", ".in"]
 
 // Mesaj gönderme
